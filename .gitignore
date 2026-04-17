@@ -1,0 +1,15 @@
+# binaires
+*.out
+*.exe
+a.out
+exec
+
+# objets
+*.o
+
+# dossiers build
+build/
+
+# fichiers temporaires
+*~
+*.swp
