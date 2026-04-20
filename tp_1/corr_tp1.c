@@ -11,6 +11,7 @@ int main(void){
     char ligne[TAILLE_MAX];
     printf("myshell> ");
     fgets(ligne, TAILLE_MAX, stdin);
+    printf("%s\n", ligne);
     return 0;
 
 
