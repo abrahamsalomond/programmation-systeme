@@ -9,10 +9,13 @@
 
 int main(void){
     char ligne[TAILLE_MAX];
-    printf("myshell> ");
-    fgets(ligne, TAILLE_MAX, stdin);
-    printf("%s\n", ligne);
+
+    while(1){
+        printf("myshell> ");
+        fgets(ligne, TAILLE_MAX, stdin);
+        if(strcmp(ligne, "exit\n")==0|| strcmp(ligne, "quit\n")==0)
+        break;
+        printf("%s\n", ligne);
+    }
     return 0;
-
-
 }
